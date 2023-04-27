@@ -1,0 +1,498 @@
+/*   Theme default css */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+  font-family: "SohoGothic-Ultra-Italic";
+  src: url(../fonts/font-F/SohoGothic-Ultra-Italic.otf);
+}
+
+@font-face {
+  font-family: 'PSL Kittithada Pro';
+  src: url('../fonts/font-F/PSLKittithadaProBold.woff2') format('woff2'),
+      url('../fonts/font-F/PSLKittithadaProBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ======font family=========
+font-family: 'Anton', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: "SohoGothic-Ultra-Italic";
+font-family: 'PSL Kittithada Pro';
+*/
+
+
+
+body {
+  font-weight: 300;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+}
+img{
+  max-width: 100%;
+  display: inline-block;
+}
+
+button {
+  cursor: pointer;
+}
+
+a:focus,
+button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+a:focus,
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+a,
+button {
+  color: inherit;
+  outline: medium none;
+  text-decoration: none;
+}
+
+button:focus,
+input:focus,
+input:focus,
+textarea,
+textarea:focus {
+  outline: 0;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0px;
+  font-weight: 700;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+.pb_150 {
+  padding-bottom: 150px;
+}
+
+.pb_100 {
+  padding-bottom: 100px;
+}
+
+.pb_50 {
+  padding-bottom: 50px;
+}
+
+.pt_150 {
+  padding-top: 150px;
+}
+
+.pt_100 {
+  padding-top: 100px;
+}
+
+.pt_50 {
+  padding-top: 50px;
+}
+
+.mb_150 {
+  margin-bottom: 150px;
+}
+
+.mb_100 {
+  margin-bottom: 100px;
+}
+
+.mb_50 {
+  margin-bottom: 50px;
+}
+
+.mt_150 {
+  margin-top: 150px;
+}
+
+.mt_100 {
+  margin-top: 100px;
+}
+
+.mt_50 {
+  margin-top: 50px;
+}
+
+.thm_btn {}
+
+/* default-css END 
+================================== */
+
+
+
+/*============hero Area Start =============*/
+.hero-Area {
+  background: url(../img/hero-bg.png);
+  background-size: contain;
+  position: relative;
+  z-index: 1;
+  padding: 30px 0;
+  height: 1470px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #051649;
+}
+
+img.top-ov {
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+  top: 0;
+}
+
+.container {
+  max-width: 1120px;
+}
+
+.row {}
+
+.col-lg-12 {}
+
+.hero_top__icon {
+  text-align: right;
+  position: relative;
+}
+
+.hero_top__icon ul {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.hero_top__icon ul li {
+  display: inline-block;
+  margin-left: 35px;
+}
+
+.logo a {
+  text-align: center;
+}
+
+.logo span {
+  display: block;
+  font-size: 40px;
+  font-family: "SohoGothic-Ultra-Italic";
+  line-height: 1;
+  color: #ecd3b6;
+}
+
+.logo b {
+  font-size: 80px;
+  display: block;
+  font-family: 'Anton', sans-serif;
+  line-height: 1;
+  color: #fff;
+}
+
+.logo.bdr {
+  border-right: 1px solid #fff;
+  padding-right: 30px;
+}
+
+.hero_text {
+  text-align: left;
+  margin-top: 480px;
+  color: #fff;
+  text-transform: uppercase;
+  max-width: 630px;
+}
+
+.hero_text ul {
+  font-size: 33px;
+  text-align: right;
+  position: absolute;
+  right: 0;
+  top: 89%;
+}
+
+.hero_text ul a {
+    transition: .3s;
+}
+
+.hero_text ul a:hover {
+    opacity: .7;
+}
+
+.hero_text p {
+  font-size: 30px;
+}
+
+.hero_text>span {
+  font-size: 51px;
+  font-family: 'Anton';
+  display: block;
+  margin-top: 10px;
+}
+
+.hero_text .logo b {
+  font-size: 300px;
+}
+
+.hero_text .logo span {
+  font-size: 95px;
+}
+
+.hero_text .logo a {
+  text-align: left;
+}
+
+/*============hero Area End =============*/
+
+
+/*============nav__area Area Start =============*/
+
+.nav__area {
+  margin: 20px 0;
+}
+
+.nav__area ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__area ul li a:hover {
+  filter: brightness(0.5);
+}
+
+.nav__area ul li a {
+  transition: .3s;
+}
+
+.jnp_list {
+  background: #051649;
+  color: #fff;
+  padding: 70px 0;
+}
+
+.jnp_list ul {
+  padding-left: 43px;
+}
+
+section.jnp_list ul li {
+  font-size: 40px;
+  list-style: disc;
+  margin-bottom: 20px;
+}
+
+/*============nav__area Area End =============*/
+
+
+/*============service Area Start =============*/
+.service-Area {
+  background: #000E3B;
+  color: #fff;
+  padding: 60px 0 120px;
+}
+
+.svc_text {
+  text-align: center;
+  max-width: 900px;
+  margin-inline: auto;
+  margin-bottom: 70px;
+}
+
+.svc_text p {
+  font-size: 52px;
+}
+
+.service_wrp {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.svc_blk {
+  width: 280px;
+  height: 370px;
+  position: relative;
+  text-align: center;
+  background: #ffff;
+  margin: 20px;
+}
+
+.svc_blk span {
+  display: block;
+  position: relative;
+  max-width: 220px;
+  margin-inline: auto;
+  color: #061649;
+  font-size: 23px;
+  height: 89px;
+  display: flex;
+  align-items: center;
+  line-height: 1.3;
+  justify-content: center;
+}
+
+.svc_blk i {
+  display: block;
+  position: relative;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  transition: .3s;
+}
+
+.svc_blk:hover i {
+  scale: 1.1;
+}
+
+.svc-bg {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  left: 0;
+  width: 100%;
+}
+
+/*============service Area End =============*/
+
+
+/*============ Area Start =============*/
+
+/*============ Area End =============*/
+
+
+/*============footer Area Start =============*/
+.footer-Area {
+  background-image: url(../img/footer-bg.png);
+  color: #ffff;
+  padding: 60px 0 50px;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.footer_content {}
+
+.footer_content hr {
+    opacity: 1;
+    background: #D7B794;
+}
+
+.footer_content p {
+    font-family: 'PSL Kittithada Pro';
+    font-size: 37px;
+    margin-bottom: 0;
+    line-height: 1.3;
+}
+
+.footer_content h1 span {
+    color: #dfbd97;
+}
+
+.footer_content h1 {
+    font-size: 85px;
+    text-transform: uppercase;
+    font-family: 'Anton';
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.footer_link {
+    margin-top: 50px;
+}
+
+.footer_link ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer_link ul li {
+    flex: 0 0 45%;
+    margin-bottom: 30px;
+}
+
+.footer_link ul li a {
+    display: flex;
+    align-items: center;
+}
+
+.footer_link ul li a span {
+    font-size: 40px;
+    display: block;
+}
+
+.footer_link ul li a i {
+    width: 70px;
+    display: block;
+    text-align: center;
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.footer_link ul li a i.fn-1 {
+    width: 80px;
+    margin-left: -5px;
+}
+
+.footer_link ul li a .mail span {
+    font-size: 28px;
+    /* line-height: 1; */
+}
+
+.footer_link ul li a .mail p {
+    margin-bottom: 0;
+    font-size: 34px;
+    line-height: 1;
+}
+
+/*============footer Area End =============*/
