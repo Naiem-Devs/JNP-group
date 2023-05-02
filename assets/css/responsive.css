@@ -7,22 +7,600 @@
 
 /* Normal screen :992px. */
 @media (min-width: 992px) and (max-width: 1200px) {
-
-
+    .hero-Area {
+        background-size: cover;
+    }
+    .hero_text ul {
+        right: 20px;
+    }
+    section.BUSINESS-section:before {
+        left: 40%;
+    }
+    
+    .BUSINESS-section:after {
+        width: 40%;
+    }
+    
+    .slider_text h2 {
+        font-size: 70px;
+    }
+    
+    .service_blk_text span {
+        font-size: 30px;
+    }
+    
+    .service_blk_text p {
+        font-size: 20px;
+    }
+    
+    .sec_title {
+        font-size: 100px;
+    }
+    
+    .footer_content p {
+        font-size: 30px;
+    }
+    
+    .footer_link ul li a span {
+        font-size: 32px;
+    }
+    
+    section.jnp_list ul li {
+        font-size: 32px;
+    }
+    
+    .about-item h3 {
+        font-size: 28px;
+    }
 }
 
  
 /* Tablet screen :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
+    :root{
+        --f21: 17px;
+        --f41: 31px;
+      }
+    .hero-Area {
+        background-size: cover;
+        height: auto;
+    }
+    .hero_text ul {
+        right: 20px;
+        font-size: 26px;
+        bottom: 0;
+        top: auto;
+    }
+    section.BUSINESS-section:before {
+        left: 40%;
+    }
+    
+    .BUSINESS-section:after {
+        width: 40%;
+    }
+    
+    .slider_text h2 {
+        font-size: 50px;
+    }
+    
+    .service_blk_text span {
+        font-size: 21px;
+    }
+    
+    .service_blk_text p {
+        font-size: 16px;
+    }
+    
+    .sec_title {
+        font-size: 60px;
+    }
+    
+    .footer_content p {
+        font-size: 25px;
+    }
+    
+    .footer_link ul li a span {
+        font-size: 24px;
+    }
+    
+    section.jnp_list ul li {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    
+    .about-item h3 {
+        font-size: 20px;
+    }
+    .hero_text .logo b {
+        font-size: 190px;
+    }
+    
+    .hero_text .logo span {
+        font-size: 65px;
+    }
+    
+    .hero_text>span {
+        font-size: 34px;
+    }
+    
+    .hero_text p {
+        max-width: 400px;
+        font-size: 20px;
+    }
+    
+    .hero_text {
+        margin-top: 220px;
+        margin-bottom: 100px;
+    }
 
+.hero_list {
+    bottom: 250px;
+}
 
+.hero_list ul {
+    font-size: 24px;
+}
+    
+    .nav__area ul li a {
+        scale: .7;
+        display: block;
+    }
+    
+    .jnp_list {
+        padding: 50px 0;
+    }
+    
+    .svc_text p {
+        font-size: 35px;
+        margin-bottom: 0;
+    }
+
+.svc_text {
+    margin-bottom: 50px;
+}
+    
+    .about-text {
+        font-size: 70px;
+    }
+    .clip-path-section {
+        height: 400px;
+    }
+    
+    .clip-path-item {
+        padding-top: 50px;
+    }
+    
+    .BUSINESS_img {
+        flex-direction: column;
+        margin: -46px;
+    }
+
+.BUSINESS_img img {
+    scale: .7;
+}
+    
+    .BUSINESS_text h1 {
+        font-size: 150px;
+    }
+    
+    .BUSINESS_text b {
+        font-size: 25px;
+    }
+    
+    .BUSINESS_text h2 {
+        font-size: 87px;
+    }
+    
+    .BUSINESS_text p {
+        font-size: 40px;
+    }
+    .BUSINESS_text {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 30px;
+    }
+    
+    .slider_text p {
+        font-size: 21px;
+    }
+    
+    .thumb__slider_all .swiper-slide {
+        height: 165px;
+    }
+    
+    .thumb__slider .swiper-wrapper {
+    }
+    
+    .slider_item:after {
+    }
+    
+    .img-perent {
+        max-width: 420px;
+        display: flex;
+        align-items: center;
+        height: auto;
+    }
+    
+    .service-area {
+        padding-top: 50px;
+    }
+    
+    .service-area.text-right:after, .service-area.text-left:after {
+        top: 55%;
+    }
+    
+    .service-area.text-right:after {
+    }
+    
+    .mb_150 {
+        margin-bottom: 100px;
+    }
+    
+    .product-items-hear i {
+    }
+    
+    .product-items-hear {
+        width: 100%;
+    }
+    
+    .board-block {
+        max-width: 650px;
+    }
+    
+    .footer_content h1 {
+        font-size: 70px;
+    }
+    
+    .footer_link ul li a .mail p {
+        font-size: 26px;
+    }
+    
+    .footer_link ul li a .mail span {
+        font-size: 18px;
+    }
+    
+    .footer_link ul li a i {
+        width: 50px;
+    }
+    
+    .footer_link ul li a i.fn-1 {
+        width: 60px;
+    }
+    .slider-Area {
+        padding-bottom: 50px;
+    }
+    .service_blk_text h1 {
+        font-size: 30px;
+    }
+    
+    .service_blk_text h1 .h_und {
+        font-size: 21px;
+    }
 }
 
  
 /* small screen :320px. */
 @media (max-width: 767px) {
+    :root{
+        --f21: 17px;
+        --f41: 31px;
+      }
+    .hero-Area {
+        background-size: cover;
+        height: auto;
+    }
+    .hero_text ul {
+        font-size: 20px;
+        text-align: left;
+        position: unset;
+    }
+    section.BUSINESS-section:before {
+        border: 0 solid transparent;
+        border-left-width: 750px;
+        border-right-width: 0px;
+        border-top: 90px solid #c7b199;
+        top: 400px;
+        left: 0;
+    }
+    
+    .BUSINESS-section:after {
+        width: 100%;
+        top: 0;
+        height: 400px;
+    }
+    
+    .slider_text h2 {
+        font-size: 22px;
+    }
+    
+    .service_blk_text span {
+        font-size: 21px;
+    }
+    
+    .service_blk_text p {
+        font-size: 16px;
+        padding-bottom: 0;
+    }
+    
+    .sec_title {
+        font-size: 36px;
+        padding: 30px 0;
+    }
 
- 
+h2.sec_title.btit {
+    text-align: center;
+}
+    
+    .footer_content p {
+        font-size: 20px;
+    }
+    
+    .footer_link ul li a span {
+        font-size: 18px;
+    }
+    
+    section.jnp_list ul li {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .about-item h3 {
+        font-size: 16px;
+    }
+    .hero_text .logo b {
+        font-size: 110px;
+    }
+    
+    .hero_text .logo span {
+        font-size: 37px;
+    }
+    
+    .hero_text>span {
+        font-size: 23px;
+    }
+    
+    .hero_text p {
+        max-width: 400px;
+        font-size: 18px;
+    }
+    
+    .hero_text {
+        margin-top: 130px;
+        margin-bottom: 20px;
+    }
+
+.hero_list {
+    position: unset;
+}
+
+.hero_list ul {
+    position: unset;
+    text-align: left;
+    font-size: 22px;
+}
+    
+    .nav__area ul li a {
+        scale: .6;
+        display: block;
+    }
+    
+    .jnp_list {
+        padding: 50px 0;
+    }
+    
+    .svc_text p {
+        font-size: 22px;
+        margin-bottom: 0;
+        max-width: 300px;
+        margin-inline: auto;
+    }
+
+.svc_text {
+    margin-bottom: 15px;
+}
+    
+    .about-text {
+        font-size: 52px;
+    }
+    .clip-path-section {
+        height: 350px;
+    }
+    
+    .clip-path-item {
+        padding-top: 35px;
+    }
+    
+    .BUSINESS_img {
+        flex-direction: column;
+        margin: auto;
+    }
+
+.BUSINESS_img img {
+    scale: .6;
+}
+    
+    .BUSINESS_text h1 {
+        font-size: 120px;
+    }
+    
+    .BUSINESS_text b {
+        font-size: 22px;
+    }
+    
+    .BUSINESS_text h2 {
+        font-size: 72px;
+    }
+    
+    .BUSINESS_text p {
+        font-size: 40px;
+    }
+    .BUSINESS_text {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 0;
+        margin-bottom: 100px;
+        align-items: center;
+    }
+    
+    .slider_text p {
+        font-size: 16px;
+    }
+    
+    .thumb__slider_all .swiper-slide {
+        height: 80px;
+        border-radius: 20px !important;
+    }
+    
+    .thumb__slider .swiper-wrapper {
+    height: 300px;
+    }
+
+.thumb__slider .swiper-slide {
+    border-radius: 25px;
+}
+    
+    .slider_item:after {
+    }
+    
+    .img-perent {
+        max-width: 330px;
+        display: flex;
+        align-items: center;
+        height: auto;
+    }
+    
+    .service-area {
+        padding-top: 50px;
+    }
+
+.service-area.text-right .service_blk {flex-direction: column;max-width: 350px;}
+    
+    .service-area.text-right:after, .service-area.text-left:after {
+        top: auto;
+        height: auto;
+    }
+    
+    .service-area.text-right:after {
+    }
+    
+    .mb_150 {
+        margin-bottom: 70px;
+    }
+    
+    .product-items-hear i {
+    }
+    
+    .product-items-hear {
+    margin-inline: auto;
+    margin-bottom: 20px;
+    overflow: hidden;
+    }
+    
+    .board-block {
+        max-width: 350px;
+        margin: 60px 0;
+    }
+    
+    .footer_content h1 {
+        font-size: 44px;
+    }
+    
+    .footer_link ul li a .mail p {
+        font-size: 24px;
+    }
+    
+    .footer_link ul li a .mail span {
+        font-size: 16px;
+    }
+    
+    .footer_link ul li a i {
+        width: 30px;
+    }
+    
+    .footer_link ul li a i.fn-1 {
+        width: 45px;
+    }
+    .slider-Area {
+        padding-bottom: 20px;
+    }
+    .service_blk_text h1 {
+        font-size: 30px;
+    }
+    
+    .service_blk_text h1 .h_und {
+        font-size: 21px;
+    }
+    .logo b {
+        font-size: 60px;
+    }
+    
+    .logo span {
+        font-size: 26px;
+    }
+    
+    .svc_blk span {
+        font-size: 20px;
+    }
+    
+    .service-Area {
+        padding-bottom: 70px;
+    }
+    
+    .about-item p {
+        margin: 20px 0;
+    }
+    
+    .clip-path-list {
+        font-size: 24px;
+    }
+    
+    .BUSINESS-section {
+        padding-bottom: 10px;
+        padding-top: 30px;
+    }
+    
+    .f-d {
+        margin-bottom: -60px;
+    }
+    .mb_100{
+    margin-bottom: 65px;
+}
+.service_blk {flex-direction: column-reverse;max-width: 350px;margin-inline: auto;}
+
+.service_blk_text h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.service_blk_text {
+    padding-top: 25px;
+}
+
+.product-area {
+    padding-bottom: 45px;
+}
+
+.footer_link ul {
+    flex-direction: column;
+}
+
+.footer_link ul li {
+    margin-bottom: 20px;
+}
+
+.footer-Area {
+    padding: 50px 0 30px;
+}
+.board-block::after {
+    top: 25px;
+}
+.svc_blk{
+}
+
 }
  
 /* Large Mobile screen :480px. */

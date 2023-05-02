@@ -7,29 +7,42 @@
   }); 
 
 
-  // owlCarousel
-  $(".brand-active").owlCarousel({
-    loop: true,
-    margin: 30,
-    items: 6,
-    navText: [
-      '<i class="fa fa-angle-left"></i>',
-      '<i class="fa fa-angle-right"></i>'
-    ],
-    nav: false,
-    dots: false,
-    responsive: {
-      0: {
-        items: 2
-      },
-      767: {
-        items: 3
-      },
-      992: {
-        items: 6
-      }
-    }
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  var swiper2 = new Swiper(".mySwiper2", {
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+      swiper: swiper,
+    },
   });
 
+  var swiper = new Swiper(".mySwiper-two", {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+    navigation: {
+      nextEl: ".swiper-button-next-two",
+      prevEl: ".swiper-button-prev-two",
+    }
+  });
+  var swiper2 = new Swiper(".mySwiper-two_tm", {
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+      swiper: swiper,
+    },
+  });
  
 })(jQuery);

@@ -21,7 +21,11 @@ font-family: 'Oswald', sans-serif;
 font-family: "SohoGothic-Ultra-Italic";
 font-family: 'PSL Kittithada Pro';
 */
-
+:root{
+  --thmColor: #000E3B;
+  --f21: 21px;
+  --f41: 41px;
+}
 
 
 body {
@@ -30,6 +34,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Oswald', sans-serif;
+  color: var(--thmColor);
 }
 img{
   max-width: 100%;
@@ -186,6 +191,7 @@ li {
   background-repeat: no-repeat;
   background-position: center;
   background-color: #051649;
+  overflow: hidden;
 }
 
 img.top-ov {
@@ -217,6 +223,10 @@ img.top-ov {
 .hero_top__icon ul li {
   display: inline-block;
   margin-left: 35px;
+}
+
+.hero_top__icon ul li:first-child {
+    margin-left: 0;
 }
 
 .logo a {
@@ -252,15 +262,25 @@ img.top-ov {
   max-width: 630px;
 }
 
-.hero_text ul {
+.hero_text .lang-v2 {font-size: 40px;}
+
+.hero_list ul {
   font-size: 33px;
   text-align: right;
   position: absolute;
   right: 0;
   top: 89%;
+  color: #fff;
 }
 
-.hero_text ul a {
+.hero_list {
+    position: absolute;
+    right: 20px;
+    top: auto;
+    bottom: 179px;
+}
+
+.hero_list ul a {
     transition: .3s;
 }
 
@@ -271,6 +291,8 @@ img.top-ov {
 .hero_text p {
   font-size: 30px;
 }
+
+.lang-v2 {font-weight: 400;font-family: 'PSL Kittithada Pro';line-height: 1.3;}
 
 .hero_text>span {
   font-size: 51px;
@@ -380,6 +402,11 @@ section.jnp_list ul li {
   justify-content: center;
 }
 
+.svc_blk span.lang-v2 {
+    max-width: 95%;
+    height: 100px;
+}
+
 .svc_blk i {
   display: block;
   position: relative;
@@ -406,9 +433,448 @@ section.jnp_list ul li {
 /*============service Area End =============*/
 
 
-/*============ Area Start =============*/
+/*============ About Area About Start =========*/
+.about-area{
+    padding-top: 50px;
+}
+.about-item{}
 
-/*============ Area End =============*/
+.about-item h3 {
+    font-size: 30px;
+    color: var(--thmColor);
+    font-weight: 600;
+}
+.about-text{
+  font-size: 86px;
+  font-family: 'Anton';
+  font-weight: 400;
+  color: var(--thmColor);
+}
+
+.about-item p {
+    font-size:  var(--f21);
+    margin: 30px 0;
+}
+.about-des{
+  font-size: var(--f21);
+}
+.about-des-bold{
+  font-size: 30px ;
+}
+.clip-path-section{
+  position: relative;
+  height: 520px;
+  background: url(../img/ship.jpg);
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
+  margin-bottom: 20px;
+}
+
+.clip-path-section:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--thmColor);
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: .5;
+}
+.clip-path-section .container{display: flex;align-items: center;height: 100%;}
+.clip-path-list{
+  font-size: var(--f41);
+  color: #fff;
+}
+/*============ About Area End =============*/
+
+
+
+/*============ JNP Grop Area start =============*/
+.BUSINESS-section {background: var(--thmColor);padding: 75px 0;position: relative;z-index: 1;overflow: hidden;}
+
+section.BUSINESS-section:before {
+    content: "'";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-bottom-width: 650px;
+    border-top-width: 0px;
+    border-left: 156px solid #c7b199;
+    top: 0;
+    left: 44%;
+    z-index: 1;
+}
+
+.BUSINESS-section:after {
+    content: "";
+    position: absolute;
+    width: 44%;
+    height: 100%;
+    background: #c7b199;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.BUSINESS-section .container {
+    height: 100%;
+}
+.BUSINESS_text {color: var(--thmColor);}
+
+.BUSINESS_text p {
+    font-size: 58px;
+    color: #fff;
+    font-family: 'PSL Kittithada Pro';
+}
+
+.BUSINESS_text h2 {
+    font-size: 127px;
+    font-family: 'Anton';
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+.BUSINESS_text b {
+    color: #fff;
+    font-size: 38px;
+    font-family: 'SohoGothic-Ultra-Italic';
+    margin-left: 20px;
+}
+
+.BUSINESS_text h1 {
+    font-size: 213px;
+    font-family: 'Anton';
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 0;
+}
+.BUSINESS_img {display: flex;align-items: center;height: 100%;justify-content: space-between;}
+
+/*============ JNP Grop Area End =============*/
+
+
+/*============ slider Area End =============*/
+.slider-Area{padding: 70px 0;}
+.slider_text{
+}
+
+.slider_text p {
+    font-size: 33px;
+    margin-bottom: 0;
+}
+
+.slider_text h2 {
+    font-size: 88px;
+    font-weight: 400;
+    font-family: 'Anton';
+    margin-bottom: 20px;
+}
+.swiper-button-next:after, .swiper-button-prev:after{
+  opacity: 0;
+}
+.slider_item{
+    position: relative;
+}
+
+.slider_item:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    background: var(--thmColor);
+    left: 0;
+    top: 50%;
+    transform: skewY(3deg) translateY(-50%);
+}
+.sld_arrow{display: flex;align-items: center;justify-content: center;gap: 20px;}
+/*============ slider Area End =============*/
+
+/* ============service area start========== */
+.sec_title{
+  font-size: 130px;
+  text-align: center;
+  background-color: #000E3B;
+  color: white;
+  margin: 0;
+  font-family: 'Anton';
+  font-weight: 400;
+  padding: 40px 0;
+  text-transform: uppercase;
+}
+
+h2.sec_title.btit {
+    text-align: left;
+}
+/* ============service area start========== */
+
+
+/* =============img style================ */
+
+.img-perent{
+  position: relative;
+  /* height: 580px; */
+  max-width: 560px;
+  width: 100%;
+  flex-shrink: 0;
+}
+.img-child-1{
+  position: absolute;
+  content: "";
+  top: 21px;
+  right: 10%;
+}
+.img-child-2{
+  position: absolute;
+  content: "";
+  top: 9px;
+  right: 20%;
+}
+.img-child-3{
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 30%;
+}
+.laying-header{
+  color: #061649; 
+  font-size: 35px; 
+  text-align: right;
+  /* padding: 20px 40px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 13%;
+}
+/* =============img style================ */
+
+
+
+
+
+/* =============img style================ */
+.service_blk{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.service_blk_text{}
+
+.service_blk_text h1 {
+    font-size: 45px;
+    font-family: 'PSL Kittithada Pro';
+    line-height: 1;
+}
+
+.service_blk_text h1 .h_und {
+    display: inline-block;
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.service_blk_text span {
+    font-size: 35px;
+    font-family: 'PSL Kittithada Pro';
+    line-height: 1;
+    display: block;
+}
+
+.text-right .service_blk_text span {
+    margin-left: auto;
+}
+
+.service_blk_text h2 {
+    font-size: var(--f41);
+    font-weight: 400;
+    font-family: 'Anton';
+    margin-bottom: 25px;
+}
+
+.service_blk_text p {
+    font-size: 23px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.service-area {
+    position: relative;
+    overflow: hidden;
+    padding-top: 70px;
+}
+
+.service-area.text-right:after,.service-area.text-left:after {
+    content: "";
+    position: absolute;
+    width: 75%;
+    top: 55%;
+    height: 65%;
+    background: #EBEBEB;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+.service-area.text-left:after {
+    left: 0;
+}
+
+.service-area.text-right:after {
+    right: 0;
+}
+
+.left-child-img1{
+  left: 30%;
+}
+.left-child-img2{
+  left: 40%;
+}
+.left-child-img3{
+  left: 50%;
+}
+.img-perent2{
+  position: relative;
+  height: 500px;
+}
+.left-child-img1{
+  position: absolute;
+  content: "";
+  top: 21px;
+  left: 10%;
+}
+.left-child-img2{
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 20%;
+}
+.left-child-img3{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 30%;
+}
+
+/* =============img style================ */
+
+
+
+/* ============product area============= */
+.product-area{
+  background: linear-gradient(rgb(255 255 255 / 80%),rgb(255 255 255 / 80%)), url(../img/product-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 70px 0;
+}
+
+.product-area .container {
+    max-width: 920px;
+}
+
+.product-img{
+  width: 100%;
+  max-height: 220px;
+  object-fit: contain;
+}
+.product-items-hear{
+  position: relative;
+  margin-bottom: 45px;
+  width: 260px;
+  height: 280px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px rgb(0 0 0 / 21%);
+}
+
+.product-items-hear i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 220px;
+}
+.product-title{
+  position: absolute;
+  top: 84%;
+  left: 20%;
+  font-size: 19px;
+  color: #061649;
+  font-family: 'Anton';
+  font-weight: 400;
+}
+/* ============product area End============= */
+
+
+/* ============board area============= */
+
+.board-section{
+    overflow: hidden;
+}
+.board-block::after {
+  content: '';
+  position: absolute;
+  width: 93%;
+  height: 98%;
+  top: 40px;
+  left: 0;
+  background: white;
+  z-index: -1;
+  box-shadow: 0 9px 20px rgb(0 0 0 / 30%);
+}
+
+.board-block {
+  position: relative;
+  max-width: 810px;
+  margin-bottom: 50px;
+  padding-left: 20px;
+  margin: 80px 0;
+}
+
+.board-block.right {margin-left: auto;}
+
+.board-block.right:after {
+    left: auto;
+    right: 0;
+}
+
+.board-block.right img {}
+.board-block-2 {
+  position: relative;
+  max-width: 810px;
+  margin-bottom: 50px;
+}
+.board-block-2::after {
+  content: '';
+  position: absolute;
+  width: 93%;
+  height: 100%;
+  top: 33px;
+  left: 56px;
+  background: white;
+  z-index: -1;
+  box-shadow: 0 9px 20px rgb(0 0 0 / 63%);
+}
+/* ============product area============= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*============footer Area Start =============*/
@@ -420,7 +886,7 @@ section.jnp_list ul li {
   background-size: cover;
 }
 
-.footer_content {}
+/* .footer_content {} */
 
 .footer_content hr {
     opacity: 1;
@@ -496,3 +962,91 @@ section.jnp_list ul li {
 }
 
 /*============footer Area End =============*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =============== Responsive area============== */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
+/* =============== Responsive area============== */
+
+
+
+/*============thumb__slider Area End =============*/
+/* .thumb__slider {} */
+
+.thumb__slider .swiper-wrapper {
+  height: 480px;
+  padding: 20px 0;
+}
+
+.thumb__slider .thumb__slider_all {
+  height: auto !important;
+  padding-bottom: 40px;
+}
+
+.thumb__slider .swiper-slide {
+  margin-bottom: 50px;
+  border-radius: 40px;
+  overflow: hidden;
+  border: 3px solid #C4C4C4;
+}
+
+.thumb__slider .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumb__slider .swiper-button-next {
+  right: 20px;
+}
+
+.thumb__slider .swiper-button-prev {
+  left: 40px;
+}
+
+.thumb__slider_all .swiper-slide {
+  height: 229px;
+  border: 2px solid #C4C4C4;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.swiper__nav {
+  display: flex;
+  align-items: center;
+}
+
+.swiper__nav i {
+  font-size: 50px;
+  color: #fff;
+}
+
+/* ============thumb__slider Area End ============= */
